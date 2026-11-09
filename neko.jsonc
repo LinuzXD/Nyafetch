@@ -2,22 +2,31 @@
     "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
 
     "logo": {
-	"type": "file",
-	"source": "~/.config/fastfetch/neko.txt",
-	"color": {
-	   "1": "light_cyan",
-	},
-	"padding": {
-	   "right": 2,
-	   "left": 1,
-	},
+	"type": "none"
+    },
+
+    "ascii": {
+	"artPath": "/home/linus/.config/fastfetch/neko3.txt",
+	"paddingLeft": 2
+    },
+
+    "display": {
+	"percent": {
+	    "type": 9,
+            "color": {
+            "green": "light_magenta",
+                "yellow": "dim_magenta",
+                "red": "light_red"
+            }
+        }
     },
 
     "modules": [
         "break",
+
         {
             "type": "custom",
-            "format": "\u001b[90m┌──────────────────────── Catware ────────────────────────┐"
+            "format": "\u001b[90m┌────────────────────────── Catware ────────────────────────┐"
         },
         {
             "type": "host",
@@ -37,7 +46,7 @@
         {
             "type": "memory",
             "key": "│ ├󰍛",
-            "keyColor": "light_blue"
+            "keyColor": "light_blue",
         },
         {
             "type": "disk",
@@ -46,55 +55,52 @@
         },
         {
             "type": "custom",
-            "format": "\u001b[90m└─────────────────────────────────────────────────────────┘"
+            "format": "\u001b[90m└───────────────────────────────────────────────────────────┘"
         },
         "break",
         {
             "type": "custom",
-            "format": "\u001b[90m┌──────────────────────── UwUware ────────────────────────┐"
+            "format": "\u001b[90m┌────────────────────────── UwUware ────────────────────────┐"
         },
         {
             "type": "os",
             "key": " OwOS",
-            "keyColor": "light_magenta"
+            "keyColor": "magenta"
         },
         {
             "type": "kernel",
             "key": "│ ├",
-            "keyColor": "light_magenta"
+            "keyColor": "magenta"
         },
-//        {
-//            "type": "bios",
-//            "key": "│ ├",
-//            "keyColor": "light_magenta"
-//        },
+        {
+            "type": "bios",
+            "key": "│ ├",
+            "keyColor": "magenta"
+        },
         {
             "type": "packages",
             "key": "│ ├󰏖",
-            "keyColor": "light_magenta"
+            "keyColor": "magenta"
         },
-	{
-	    "type": "terminal",
-	    "key": "│ ├",
-	    "keyColor": "light_magenta"
-	},
         {
             "type": "shell",
             "key": "└ └",
-            "keyColor": "light_magenta"
+            "keyColor": "magenta"
         },
-	{
-             "type": "custom",
-             "format": "\u001b[90m└─────────────────────────────────────────────────────────┘"
-         },
-        "break",
-	{
-            "type": "custom",
-            "format": "\u001b[90m┌──────────────────── Neko Environment ───────────────────┐"
-          },
         {
-            "type": "os",
-            "key": "󰄛 Neko",
+             "type": "custom",
+             "format": "\u001b[90m└───────────────────────────────────────────────────────────┘"
+        },
+        
+        "break",
+	
+        {
+            "type": "custom",
+            "format": "\u001b[90m┌───────────────────── Neko Environment ────────────────────┐"
+        },
+        {
+            "type": "de",
+            "key": " Neko",
             "keyColor": "light_blue"
         },
         {
@@ -119,33 +125,33 @@
         },
         {
             "type": "custom",
-            "format": "\u001b[90m└─────────────────────────────────────────────────────────┘"
+            "format": "\u001b[90m└───────────────────────────────────────────────────────────┘"
         },
+
         "break",
+
         {
             "type": "custom",
-            "format": "\u001b[90m┌───────────────────── UwUtime /  DT ─────────────────────┐"
+            "format": "\u001b[90m┌─────────────────────── UwUtime /  DT ─────────────────────┐"
         },
         {
             "type": "uptime",
             "key": "  UwUtime ",
-            "keyColor": "light_magenta"
+            "keyColor": "magenta"
         },
         {
             "type": "datetime",
             "key": "  NyaTime ",
-            "keyColor": "light_magenta"
+            "keyColor": "magenta"
         },
         {
             "type": "custom",
-            "format": "\u001b[90m└─────────────────────────────────────────────────────────┘"
+            "format": "\u001b[90m└───────────────────────────────────────────────────────────┘"
         },
-
         {
             "type": "colors",
             "paddingLeft": 2,
             "symbol": "circle"
-        }
- 
+        },
     ]
 }
