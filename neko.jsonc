@@ -5,7 +5,7 @@
 	"type": "file",
 	"source": "~/.config/fastfetch/neko.txt",
 	"color": {
-        "1": "light_cyan",
+        "1": "light_blue",
 	   },
     "padding": {
         "left": 1
